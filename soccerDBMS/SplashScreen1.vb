@@ -31,15 +31,23 @@
         'Copyright info
         Copyright.Text = My.Application.Info.Copyright
 
-        'Login form pops up when progress bar fully loads 
-        If ProgressBar1.Value = ProgressBar1.Maximum Then
-            Visible = False
-            Form1.Visible = True
-        End If
+        'Timer counts
+        Timer1.Start()
+
 
     End Sub
 
     Private Sub ApplicationTitle_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ProgressBar1.Increment(2)
+        If ProgressBar1.Value = ProgressBar1.Maximum Then
+            Timer1.Stop()
+            Me.Visible = False
+            Form1.Visible = True
+            'Login form opens
+        End If
     End Sub
 End Class

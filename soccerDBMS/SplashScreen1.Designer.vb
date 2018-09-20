@@ -23,13 +23,15 @@ Partial Class SplashScreen1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
         Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
+        Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -68,20 +70,6 @@ Partial Class SplashScreen1
         Me.DetailsLayoutPanel.Size = New System.Drawing.Size(247, 79)
         Me.DetailsLayoutPanel.TabIndex = 1
         '
-        'ApplicationTitle
-        '
-        Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
-        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationTitle.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.ApplicationTitle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.ApplicationTitle.Location = New System.Drawing.Point(3, 3)
-        Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(237, 212)
-        Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "Kabumbu Premier League"
-        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        '
         'Version
         '
         Me.Version.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -106,12 +94,29 @@ Partial Class SplashScreen1
         Me.Copyright.TabIndex = 2
         Me.Copyright.Text = "Copyright"
         '
+        'ApplicationTitle
+        '
+        Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
+        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ApplicationTitle.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.ApplicationTitle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ApplicationTitle.Location = New System.Drawing.Point(3, 3)
+        Me.ApplicationTitle.Name = "ApplicationTitle"
+        Me.ApplicationTitle.Size = New System.Drawing.Size(237, 212)
+        Me.ApplicationTitle.TabIndex = 0
+        Me.ApplicationTitle.Text = "Kabumbu Premier League"
+        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        '
         'ProgressBar1
         '
         Me.ProgressBar1.Location = New System.Drawing.Point(3, 221)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(237, 23)
         Me.ProgressBar1.TabIndex = 2
+        '
+        'Timer1
+        '
         '
         'SplashScreen1
         '
@@ -137,4 +142,5 @@ Partial Class SplashScreen1
     Friend WithEvents Copyright As Label
     Friend WithEvents ApplicationTitle As Label
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Timer1 As Timer
 End Class
