@@ -9,3 +9,4 @@ c:\users\tevin\documents\visual studio 2017\Projects\soccerDBMS\soccerDBMS\obj\D
 c:\users\tevin\documents\visual studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.exe
 c:\users\tevin\documents\visual studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.xml
 c:\users\tevin\documents\visual studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.pdb
+C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.home_admin.resources
