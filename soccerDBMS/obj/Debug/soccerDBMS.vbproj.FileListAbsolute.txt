@@ -10,3 +10,4 @@ C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\obj\D
 C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.pdb
 C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\bin\Debug\soccerDBMS.pdb
 C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\bin\Debug\soccerDBMS.xml
+C:\Users\Tevin\documents\visual studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.newPlayer.resources

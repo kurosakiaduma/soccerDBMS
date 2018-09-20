@@ -50,6 +50,7 @@ Partial Class newPlayer
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -58,7 +59,7 @@ Partial Class newPlayer
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(77, 35)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Save"
+        Me.Button1.Text = "Clear"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -67,7 +68,7 @@ Partial Class newPlayer
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(77, 35)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Save"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label1
@@ -278,11 +279,21 @@ Partial Class newPlayer
         Me.Label13.TabIndex = 24
         Me.Label13.Text = "Position"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(466, 174)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 28
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'newPlayer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(544, 363)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox12)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.Label12)
@@ -346,4 +357,5 @@ Partial Class newPlayer
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Button3 As Button
 End Class
