@@ -23,7 +23,6 @@ Partial Class new_Player
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(new_Player))
         Dim IDLabel As System.Windows.Forms.Label
         Dim First_nameLabel As System.Windows.Forms.Label
         Dim Last_nameLabel As System.Windows.Forms.Label
@@ -37,22 +36,23 @@ Partial Class new_Player
         Dim BlocksLabel As System.Windows.Forms.Label
         Dim InterceptionsLabel As System.Windows.Forms.Label
         Dim ClearencesLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(new_Player))
         Me.DbKPLDataSet = New soccerDBMS.dbKPLDataSet()
         Me.TblPlayersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblPlayersTableAdapter = New soccerDBMS.dbKPLDataSetTableAdapters.tblPlayersTableAdapter()
         Me.TableAdapterManager = New soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager()
         Me.TblPlayersBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.TblPlayersBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.IDTextBox = New System.Windows.Forms.TextBox()
         Me.First_nameTextBox = New System.Windows.Forms.TextBox()
@@ -86,6 +86,123 @@ Partial Class new_Player
         CType(Me.TblPlayersBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TblPlayersBindingNavigator.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'IDLabel
+        '
+        IDLabel.AutoSize = True
+        IDLabel.Location = New System.Drawing.Point(6, 39)
+        IDLabel.Name = "IDLabel"
+        IDLabel.Size = New System.Drawing.Size(21, 13)
+        IDLabel.TabIndex = 1
+        IDLabel.Text = "ID:"
+        '
+        'First_nameLabel
+        '
+        First_nameLabel.AutoSize = True
+        First_nameLabel.Location = New System.Drawing.Point(6, 69)
+        First_nameLabel.Name = "First_nameLabel"
+        First_nameLabel.Size = New System.Drawing.Size(58, 13)
+        First_nameLabel.TabIndex = 3
+        First_nameLabel.Text = "First name:"
+        '
+        'Last_nameLabel
+        '
+        Last_nameLabel.AutoSize = True
+        Last_nameLabel.Location = New System.Drawing.Point(6, 95)
+        Last_nameLabel.Name = "Last_nameLabel"
+        Last_nameLabel.Size = New System.Drawing.Size(59, 13)
+        Last_nameLabel.TabIndex = 5
+        Last_nameLabel.Text = "Last name:"
+        '
+        'DoBLabel
+        '
+        DoBLabel.AutoSize = True
+        DoBLabel.Location = New System.Drawing.Point(6, 121)
+        DoBLabel.Name = "DoBLabel"
+        DoBLabel.Size = New System.Drawing.Size(34, 13)
+        DoBLabel.TabIndex = 7
+        DoBLabel.Text = "Do B:"
+        '
+        'PositionLabel
+        '
+        PositionLabel.AutoSize = True
+        PositionLabel.Location = New System.Drawing.Point(6, 147)
+        PositionLabel.Name = "PositionLabel"
+        PositionLabel.Size = New System.Drawing.Size(47, 13)
+        PositionLabel.TabIndex = 9
+        PositionLabel.Text = "Position:"
+        '
+        'CleansheetsLabel
+        '
+        CleansheetsLabel.AutoSize = True
+        CleansheetsLabel.Location = New System.Drawing.Point(6, 173)
+        CleansheetsLabel.Name = "CleansheetsLabel"
+        CleansheetsLabel.Size = New System.Drawing.Size(68, 13)
+        CleansheetsLabel.TabIndex = 11
+        CleansheetsLabel.Text = "Cleansheets:"
+        '
+        'Goals_scoredLabel
+        '
+        Goals_scoredLabel.AutoSize = True
+        Goals_scoredLabel.Location = New System.Drawing.Point(6, 199)
+        Goals_scoredLabel.Name = "Goals_scoredLabel"
+        Goals_scoredLabel.Size = New System.Drawing.Size(72, 13)
+        Goals_scoredLabel.TabIndex = 13
+        Goals_scoredLabel.Text = "Goals scored:"
+        '
+        'Goals_assistedLabel
+        '
+        Goals_assistedLabel.AutoSize = True
+        Goals_assistedLabel.Location = New System.Drawing.Point(6, 225)
+        Goals_assistedLabel.Name = "Goals_assistedLabel"
+        Goals_assistedLabel.Size = New System.Drawing.Size(78, 13)
+        Goals_assistedLabel.TabIndex = 15
+        Goals_assistedLabel.Text = "Goals assisted:"
+        '
+        'Yellow_cardsLabel
+        '
+        Yellow_cardsLabel.AutoSize = True
+        Yellow_cardsLabel.Location = New System.Drawing.Point(6, 251)
+        Yellow_cardsLabel.Name = "Yellow_cardsLabel"
+        Yellow_cardsLabel.Size = New System.Drawing.Size(70, 13)
+        Yellow_cardsLabel.TabIndex = 17
+        Yellow_cardsLabel.Text = "Yellow cards:"
+        '
+        'Red_cardsLabel
+        '
+        Red_cardsLabel.AutoSize = True
+        Red_cardsLabel.Location = New System.Drawing.Point(6, 277)
+        Red_cardsLabel.Name = "Red_cardsLabel"
+        Red_cardsLabel.Size = New System.Drawing.Size(59, 13)
+        Red_cardsLabel.TabIndex = 19
+        Red_cardsLabel.Text = "Red cards:"
+        '
+        'BlocksLabel
+        '
+        BlocksLabel.AutoSize = True
+        BlocksLabel.Location = New System.Drawing.Point(6, 303)
+        BlocksLabel.Name = "BlocksLabel"
+        BlocksLabel.Size = New System.Drawing.Size(42, 13)
+        BlocksLabel.TabIndex = 21
+        BlocksLabel.Text = "Blocks:"
+        '
+        'InterceptionsLabel
+        '
+        InterceptionsLabel.AutoSize = True
+        InterceptionsLabel.Location = New System.Drawing.Point(6, 329)
+        InterceptionsLabel.Name = "InterceptionsLabel"
+        InterceptionsLabel.Size = New System.Drawing.Size(71, 13)
+        InterceptionsLabel.TabIndex = 23
+        InterceptionsLabel.Text = "Interceptions:"
+        '
+        'ClearencesLabel
+        '
+        ClearencesLabel.AutoSize = True
+        ClearencesLabel.Location = New System.Drawing.Point(6, 355)
+        ClearencesLabel.Name = "ClearencesLabel"
+        ClearencesLabel.Size = New System.Drawing.Size(63, 13)
+        ClearencesLabel.TabIndex = 25
+        ClearencesLabel.Text = "Clearences:"
         '
         'DbKPLDataSet
         '
@@ -131,6 +248,31 @@ Partial Class new_Player
         Me.TblPlayersBindingNavigator.TabIndex = 0
         Me.TblPlayersBindingNavigator.Text = "BindingNavigator1"
         '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        '
         'BindingNavigatorMoveFirstItem
         '
         Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -163,16 +305,9 @@ Partial Class new_Player
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
         Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
@@ -195,26 +330,8 @@ Partial Class new_Player
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'TblPlayersBindingNavigatorSaveItem
         '
@@ -224,15 +341,6 @@ Partial Class new_Player
         Me.TblPlayersBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.TblPlayersBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'IDLabel
-        '
-        IDLabel.AutoSize = True
-        IDLabel.Location = New System.Drawing.Point(12, 39)
-        IDLabel.Name = "IDLabel"
-        IDLabel.Size = New System.Drawing.Size(21, 13)
-        IDLabel.TabIndex = 1
-        IDLabel.Text = "ID:"
-        '
         'IDTextBox
         '
         Me.IDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "ID", True))
@@ -240,15 +348,6 @@ Partial Class new_Player
         Me.IDTextBox.Name = "IDTextBox"
         Me.IDTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IDTextBox.TabIndex = 2
-        '
-        'First_nameLabel
-        '
-        First_nameLabel.AutoSize = True
-        First_nameLabel.Location = New System.Drawing.Point(12, 69)
-        First_nameLabel.Name = "First_nameLabel"
-        First_nameLabel.Size = New System.Drawing.Size(58, 13)
-        First_nameLabel.TabIndex = 3
-        First_nameLabel.Text = "First name:"
         '
         'First_nameTextBox
         '
@@ -258,15 +357,6 @@ Partial Class new_Player
         Me.First_nameTextBox.Size = New System.Drawing.Size(100, 20)
         Me.First_nameTextBox.TabIndex = 4
         '
-        'Last_nameLabel
-        '
-        Last_nameLabel.AutoSize = True
-        Last_nameLabel.Location = New System.Drawing.Point(12, 95)
-        Last_nameLabel.Name = "Last_nameLabel"
-        Last_nameLabel.Size = New System.Drawing.Size(59, 13)
-        Last_nameLabel.TabIndex = 5
-        Last_nameLabel.Text = "Last name:"
-        '
         'Last_nameTextBox
         '
         Me.Last_nameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "Last_name", True))
@@ -274,15 +364,6 @@ Partial Class new_Player
         Me.Last_nameTextBox.Name = "Last_nameTextBox"
         Me.Last_nameTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Last_nameTextBox.TabIndex = 6
-        '
-        'DoBLabel
-        '
-        DoBLabel.AutoSize = True
-        DoBLabel.Location = New System.Drawing.Point(12, 121)
-        DoBLabel.Name = "DoBLabel"
-        DoBLabel.Size = New System.Drawing.Size(34, 13)
-        DoBLabel.TabIndex = 7
-        DoBLabel.Text = "Do B:"
         '
         'DoBDateTimePicker
         '
@@ -292,15 +373,6 @@ Partial Class new_Player
         Me.DoBDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.DoBDateTimePicker.TabIndex = 8
         '
-        'PositionLabel
-        '
-        PositionLabel.AutoSize = True
-        PositionLabel.Location = New System.Drawing.Point(12, 147)
-        PositionLabel.Name = "PositionLabel"
-        PositionLabel.Size = New System.Drawing.Size(47, 13)
-        PositionLabel.TabIndex = 9
-        PositionLabel.Text = "Position:"
-        '
         'PositionTextBox
         '
         Me.PositionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "Position", True))
@@ -308,15 +380,6 @@ Partial Class new_Player
         Me.PositionTextBox.Name = "PositionTextBox"
         Me.PositionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PositionTextBox.TabIndex = 10
-        '
-        'CleansheetsLabel
-        '
-        CleansheetsLabel.AutoSize = True
-        CleansheetsLabel.Location = New System.Drawing.Point(12, 173)
-        CleansheetsLabel.Name = "CleansheetsLabel"
-        CleansheetsLabel.Size = New System.Drawing.Size(68, 13)
-        CleansheetsLabel.TabIndex = 11
-        CleansheetsLabel.Text = "Cleansheets:"
         '
         'CleansheetsTextBox
         '
@@ -326,15 +389,6 @@ Partial Class new_Player
         Me.CleansheetsTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CleansheetsTextBox.TabIndex = 12
         '
-        'Goals_scoredLabel
-        '
-        Goals_scoredLabel.AutoSize = True
-        Goals_scoredLabel.Location = New System.Drawing.Point(12, 199)
-        Goals_scoredLabel.Name = "Goals_scoredLabel"
-        Goals_scoredLabel.Size = New System.Drawing.Size(72, 13)
-        Goals_scoredLabel.TabIndex = 13
-        Goals_scoredLabel.Text = "Goals scored:"
-        '
         'Goals_scoredTextBox
         '
         Me.Goals_scoredTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "Goals scored", True))
@@ -342,15 +396,6 @@ Partial Class new_Player
         Me.Goals_scoredTextBox.Name = "Goals_scoredTextBox"
         Me.Goals_scoredTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Goals_scoredTextBox.TabIndex = 14
-        '
-        'Goals_assistedLabel
-        '
-        Goals_assistedLabel.AutoSize = True
-        Goals_assistedLabel.Location = New System.Drawing.Point(6, 225)
-        Goals_assistedLabel.Name = "Goals_assistedLabel"
-        Goals_assistedLabel.Size = New System.Drawing.Size(78, 13)
-        Goals_assistedLabel.TabIndex = 15
-        Goals_assistedLabel.Text = "Goals assisted:"
         '
         'Goals_assistedTextBox
         '
@@ -360,15 +405,6 @@ Partial Class new_Player
         Me.Goals_assistedTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Goals_assistedTextBox.TabIndex = 16
         '
-        'Yellow_cardsLabel
-        '
-        Yellow_cardsLabel.AutoSize = True
-        Yellow_cardsLabel.Location = New System.Drawing.Point(12, 251)
-        Yellow_cardsLabel.Name = "Yellow_cardsLabel"
-        Yellow_cardsLabel.Size = New System.Drawing.Size(70, 13)
-        Yellow_cardsLabel.TabIndex = 17
-        Yellow_cardsLabel.Text = "Yellow cards:"
-        '
         'Yellow_cardsTextBox
         '
         Me.Yellow_cardsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "Yellow cards", True))
@@ -376,15 +412,6 @@ Partial Class new_Player
         Me.Yellow_cardsTextBox.Name = "Yellow_cardsTextBox"
         Me.Yellow_cardsTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Yellow_cardsTextBox.TabIndex = 18
-        '
-        'Red_cardsLabel
-        '
-        Red_cardsLabel.AutoSize = True
-        Red_cardsLabel.Location = New System.Drawing.Point(12, 277)
-        Red_cardsLabel.Name = "Red_cardsLabel"
-        Red_cardsLabel.Size = New System.Drawing.Size(59, 13)
-        Red_cardsLabel.TabIndex = 19
-        Red_cardsLabel.Text = "Red cards:"
         '
         'Red_cardsTextBox
         '
@@ -394,15 +421,6 @@ Partial Class new_Player
         Me.Red_cardsTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Red_cardsTextBox.TabIndex = 20
         '
-        'BlocksLabel
-        '
-        BlocksLabel.AutoSize = True
-        BlocksLabel.Location = New System.Drawing.Point(12, 303)
-        BlocksLabel.Name = "BlocksLabel"
-        BlocksLabel.Size = New System.Drawing.Size(42, 13)
-        BlocksLabel.TabIndex = 21
-        BlocksLabel.Text = "Blocks:"
-        '
         'BlocksTextBox
         '
         Me.BlocksTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "Blocks", True))
@@ -411,15 +429,6 @@ Partial Class new_Player
         Me.BlocksTextBox.Size = New System.Drawing.Size(100, 20)
         Me.BlocksTextBox.TabIndex = 22
         '
-        'InterceptionsLabel
-        '
-        InterceptionsLabel.AutoSize = True
-        InterceptionsLabel.Location = New System.Drawing.Point(12, 329)
-        InterceptionsLabel.Name = "InterceptionsLabel"
-        InterceptionsLabel.Size = New System.Drawing.Size(71, 13)
-        InterceptionsLabel.TabIndex = 23
-        InterceptionsLabel.Text = "Interceptions:"
-        '
         'InterceptionsTextBox
         '
         Me.InterceptionsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblPlayersBindingSource, "Interceptions", True))
@@ -427,15 +436,6 @@ Partial Class new_Player
         Me.InterceptionsTextBox.Name = "InterceptionsTextBox"
         Me.InterceptionsTextBox.Size = New System.Drawing.Size(100, 20)
         Me.InterceptionsTextBox.TabIndex = 24
-        '
-        'ClearencesLabel
-        '
-        ClearencesLabel.AutoSize = True
-        ClearencesLabel.Location = New System.Drawing.Point(12, 355)
-        ClearencesLabel.Name = "ClearencesLabel"
-        ClearencesLabel.Size = New System.Drawing.Size(63, 13)
-        ClearencesLabel.TabIndex = 25
-        ClearencesLabel.Text = "Clearences:"
         '
         'ClearencesTextBox
         '

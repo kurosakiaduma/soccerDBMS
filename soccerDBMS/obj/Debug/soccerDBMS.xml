@@ -22,5 +22,190 @@ soccerDBMS
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:soccerDBMS.dbKPLDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblManagersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblMatchesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblPlayersDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblPositionsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblRefereesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblResultsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblTeamsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblManagersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblMatchesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblPlayersRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblPositionsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblRefereesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblResultsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblTeamsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblManagersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblMatchesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblPlayersRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblPositionsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblRefereesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblResultsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSet.tblTeamsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblManagersTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblMatchesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblPlayersTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblPositionsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblRefereesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblResultsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.tblTeamsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(soccerDBMS.dbKPLDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(soccerDBMS.dbKPLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(soccerDBMS.dbKPLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.UpdateAll(soccerDBMS.dbKPLDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:soccerDBMS.dbKPLDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

@@ -6,11 +6,11 @@
 
     End Sub
 
-    Private Sub TblPlayersBindingNavigatorSaveItem_Click_1(sender As Object, e As EventArgs) Handles TblPlayersBindingNavigatorSaveItem.Click
+    Private Sub btn_Save_Click(sender As Object, e As EventArgs) Handles btn_Save.Click
         Me.Validate()
         Me.TblPlayersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.DbKPLDataSet)
-
+        MsgBox("New player saved", MsgBoxStyle.Information, "KPL")
     End Sub
 
     Private Sub new_Player_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -19,10 +19,5 @@
 
     End Sub
 
-    Private Sub btn_Save_Click(sender As Object, e As EventArgs) Handles btn_Save.Click
-        Me.Validate()
-        Me.TblPlayersBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.DbKPLDataSet)
-        MsgBox("New player saved", MsgBoxStyle.Information, "KPL")
-    End Sub
+
 End Class
