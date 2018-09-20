@@ -93,6 +93,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbKPLDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbKPLDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -145,10 +150,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="newPlayer.Designer.vb">
-      <DependentUpon>newPlayer.vb</DependentUpon>
+    <Compile Include="new_Player.Designer.vb">
+      <DependentUpon>new_Player.vb</DependentUpon>
     </Compile>
-    <Compile Include="newPlayer.vb">
+    <Compile Include="new_Player.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SplashScreen1.Designer.vb">
@@ -171,14 +176,25 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="newPlayer.resx">
-      <DependentUpon>newPlayer.vb</DependentUpon>
+    <EmbeddedResource Include="new_Player.resx">
+      <DependentUpon>new_Player.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="dbKPLDataSet.xsc">
+      <DependentUpon>dbKPLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbKPLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbKPLDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbKPLDataSet.xss">
+      <DependentUpon>dbKPLDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -205,6 +221,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="3xhumed-Mega-Games-Pack-25-UEFA-Champions-League-1.ico" />
+    <Content Include="dbKPL.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

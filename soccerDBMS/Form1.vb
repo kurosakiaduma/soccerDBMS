@@ -30,7 +30,7 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        newPlayer.Visible = True
+        new_Player.Visible = True
         Me.Visible = False
     End Sub
 End Class
