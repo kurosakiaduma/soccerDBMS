@@ -65,7 +65,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>3xhumed-Mega-Games-Pack-25-UEFA-Champions-League-1.ico</ApplicationIcon>
+    <ApplicationIcon>if_MB__Champions_League_81174.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -233,6 +233,7 @@
     <Content Include="dbKPL.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="if_MB__Champions_League_81174.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

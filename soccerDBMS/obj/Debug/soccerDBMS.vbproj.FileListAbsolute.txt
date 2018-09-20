@@ -13,3 +13,4 @@ C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\bin\D
 C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\bin\Debug\dbKPL.mdb
 C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.new_Player.resources
 C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.mainBG.resources
+C:\Users\Tevin\Documents\Visual Studio 2017\Projects\soccerDBMS\soccerDBMS\obj\Debug\soccerDBMS.vbprojResolveAssemblyReference.cache
