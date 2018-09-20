@@ -10,7 +10,7 @@
         Me.Validate()
         Me.TblPlayersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.DbKPLDataSet)
-        MsgBox("New player saved", MsgBoxStyle.Information, "KPL")
+        MsgBox("Player records updated", MsgBoxStyle.Information, "KPL Player System")
     End Sub
 
     Private Sub new_Player_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -19,7 +19,7 @@
         Me.TblPositionsTableAdapter.Fill(Me.DbKPLDataSet.tblPositions)
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.TblPlayersBindingSource.RemoveCurrent()
     End Sub
 End Class

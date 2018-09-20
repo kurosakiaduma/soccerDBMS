@@ -70,6 +70,8 @@ Partial Class new_Player
         Me.PositionComboBox = New System.Windows.Forms.ComboBox()
         Me.TblPositionsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblPositionsTableAdapter = New soccerDBMS.dbKPLDataSetTableAdapters.tblPositionsTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         IDLabel = New System.Windows.Forms.Label()
         First_nameLabel = New System.Windows.Forms.Label()
         Last_nameLabel = New System.Windows.Forms.Label()
@@ -434,7 +436,7 @@ Partial Class new_Player
         'btn_Save
         '
         Me.btn_Save.BackColor = System.Drawing.Color.Transparent
-        Me.btn_Save.Location = New System.Drawing.Point(103, 424)
+        Me.btn_Save.Location = New System.Drawing.Point(83, 424)
         Me.btn_Save.Name = "btn_Save"
         Me.btn_Save.Size = New System.Drawing.Size(75, 23)
         Me.btn_Save.TabIndex = 27
@@ -470,6 +472,24 @@ Partial Class new_Player
         '
         Me.TblPositionsTableAdapter.ClearBeforeFill = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(164, 424)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 29
+        Me.Button1.Text = "Delete"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(2, 424)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 30
+        Me.Button2.Text = "New"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'new_Player
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -478,6 +498,8 @@ Partial Class new_Player
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(669, 459)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(PositionLabel)
         Me.Controls.Add(Me.PositionComboBox)
         Me.Controls.Add(Me.btn_Save)
@@ -507,6 +529,7 @@ Partial Class new_Player
         Me.Controls.Add(Me.IDTextBox)
         Me.Controls.Add(Me.TblPlayersBindingNavigator)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "new_Player"
         Me.Text = "new_Player"
         CType(Me.DbKPLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -553,4 +576,6 @@ Partial Class new_Player
     Friend WithEvents PositionComboBox As ComboBox
     Friend WithEvents TblPositionsBindingSource As BindingSource
     Friend WithEvents TblPositionsTableAdapter As dbKPLDataSetTableAdapters.tblPositionsTableAdapter
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
