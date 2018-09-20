@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub new_Player_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.WindowState = FormWindowState.Maximized
+        Me.WindowState = FormWindowState.Normal
         'TODO: This line of code loads data into the 'DbKPLDataSet.tblPositions' table. You can move, or remove it, as needed.
         Me.TblPositionsTableAdapter.Fill(Me.DbKPLDataSet.tblPositions)
     End Sub
