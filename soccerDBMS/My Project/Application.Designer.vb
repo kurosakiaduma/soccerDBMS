@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.soccerDBMS.new_Player
+            Me.MainForm = Global.soccerDBMS.SplashScreen1
         End Sub
     End Class
 End Namespace

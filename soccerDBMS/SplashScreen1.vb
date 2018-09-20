@@ -46,8 +46,12 @@
         If ProgressBar1.Value = ProgressBar1.Maximum Then
             Timer1.Stop()
             Me.Visible = False
-            Form1.Visible = True
-            'Login form opens
+            mainBG.Visible = True
+            'background form opens
         End If
+    End Sub
+
+    Private Sub MainLayoutPanel_Paint(sender As Object, e As PaintEventArgs) Handles MainLayoutPanel.Paint
+
     End Sub
 End Class
